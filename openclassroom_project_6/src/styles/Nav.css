@@ -1,0 +1,22 @@
+header {
+    position: sticky;
+    display: flex;
+    justify-content:space-between;
+    padding-inline:100px;
+    padding-block:30px;
+    align-items:center
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    color: #FF6060;
+}
+
+li {
+    padding-inline: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
