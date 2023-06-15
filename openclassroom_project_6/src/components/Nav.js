@@ -3,13 +3,13 @@ import '../styles/Nav.css'
 
 function Nav() {
     return (
-        <header>
+        <div className='header'>
             <img src={logo} alt='logo' />
             <ul>
-                <li><a>Acueil</a></li>
+                <li><a>Accueil</a></li>
                 <li><a>A Propos</a></li>
             </ul>
-        </header>
+        </div>
     )
 }
 
