@@ -5,9 +5,9 @@ function Nav() {
     return (
         <div className='header'>
             <img src={logo} alt='logo' />
-            <ul>
-                <li><a>Accueil</a></li>
-                <li><a>A Propos</a></li>
+            <ul className='ul_nav'>
+                <li className='li_nav'><a className='a_nav'>Accueil</a></li>
+                <li className='li_nav'><a className='a_nav'>A Propos</a></li>
             </ul>
         </div>
     )

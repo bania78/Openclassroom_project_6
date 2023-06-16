@@ -7,16 +7,15 @@
     align-items:center
 }
 
-ul {
+.ul_nav {
     display: flex;
-    list-style: none;
     color: #FF6060;
 }
 
-li {
+.li_nav {
     padding-inline: 10px;
 }
 
-a:hover {
+.a_nav:hover {
     text-decoration: underline;
 }
