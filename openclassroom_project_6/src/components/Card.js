@@ -1,4 +1,4 @@
-import logements from '../assets/logements.json'
+import logements from '../data/logements.json'
 import '../styles/Card.css'
 
 function Card() {
