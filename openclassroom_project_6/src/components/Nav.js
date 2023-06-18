@@ -6,7 +6,7 @@ function Nav() {
         <div className='header'>
             <img src={logo} alt='logo' />
             <ul className='ul_nav'>
-                <li className='li_nav'><a className='a_nav'>Accueil</a></li>
+                <li className='li_nav'><a className='a_nav' href={`/`}>Accueil</a></li>
                 <li className='li_nav'><a className='a_nav'>A Propos</a></li>
             </ul>
         </div>
