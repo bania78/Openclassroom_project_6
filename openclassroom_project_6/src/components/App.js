@@ -1,16 +1,13 @@
 import '../styles/App.css';
 import Nav from './Nav';
-import Banner from './Banner';
-import CardList from './CardList';
 import Footer from './Footer';
+import { Outlet } from "react-router-dom";
 
 function App() {
   return (
     <div>
       <Nav />
-      <Banner />
-      <CardList>
-      </CardList>
+      <Outlet />
       <Footer />
     </div>
   );

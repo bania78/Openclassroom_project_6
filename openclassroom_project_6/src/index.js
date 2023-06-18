@@ -4,16 +4,29 @@ import './styles/index.css';
 import App from './components/App';
 import reportWebVitals from './reportWebVitals';
 import ErrorPage from "./components/ErrorPage";
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider, } from "react-router-dom";
+import Logement, { loader as logementLoader, } from './components/Logement';
+import Accueil from './components/Accueil';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App/>,
     errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "",
+        element: <Accueil />,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: "logements/:logementId",
+        element: <Logement />,
+        errorElement: <ErrorPage />,
+        loader: logementLoader,
+      }
+    ]
+
   },
 ]);
 
