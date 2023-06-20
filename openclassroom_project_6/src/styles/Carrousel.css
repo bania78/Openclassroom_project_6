@@ -30,6 +30,7 @@
     min-width: 100%;
     object-fit: cover;
     height: 100%;
+    transition-duration: 1s;
 }
 
 .previous_button {
