@@ -1,6 +1,6 @@
 import Logements from '../data/logements.json'
-import Nav from './Nav';
 import { useLoaderData } from "react-router-dom";
+import Carrousel from './Carrousel';
 
 export async function getLogement(id) {
     let Logement = Logements.find(Logement => Logement.id === id);
@@ -16,6 +16,7 @@ function Logement() {
     const { logement } = useLoaderData();
     return (
         <div>
+            <Carrousel logement={logement}/>
         </div>
     );
 }

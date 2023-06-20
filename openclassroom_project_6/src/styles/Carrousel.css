@@ -1,0 +1,41 @@
+.carousel_div {
+    overflow: hidden;
+    border-radius: 25px;
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 415px;
+    object-fit: cover;
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.previous_button, .next_button {
+    display: flex;
+    border: none;
+    background: none;
+    color: white;
+    font-size: 80px;
+    cursor: pointer;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 5%;
+    height: 100%;
+}
+
+.carrousel_img {
+    display: flex;
+    min-width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.previous_button {
+    left: 0;
+}
+
+.next_button {
+    right: 0;
+}
