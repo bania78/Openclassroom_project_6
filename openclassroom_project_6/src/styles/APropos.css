@@ -1,0 +1,9 @@
+.content_a_propos {
+    display: grid;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    justify-content: space-between;
+    gap: 25px;
+}

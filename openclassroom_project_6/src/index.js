@@ -7,6 +7,7 @@ import ErrorPage from "./components/ErrorPage";
 import { createBrowserRouter, RouterProvider, } from "react-router-dom";
 import Logement, { loader as logementLoader, } from './components/Logement';
 import Accueil from './components/Accueil';
+import APropos from './components/APropos';
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,11 @@ const router = createBrowserRouter([
         element: <Logement />,
         errorElement: <ErrorPage />,
         loader: logementLoader,
+      },
+      {
+        path: "a_propos",
+        element: <APropos />,
+        errorElement: <ErrorPage />,
       }
     ]
 

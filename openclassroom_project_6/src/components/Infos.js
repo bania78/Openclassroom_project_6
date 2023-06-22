@@ -10,7 +10,7 @@ function Infos ({title, contents}) {
         setIndex(newIndex < -1 ? 0 : newIndex);
     }
     return (
-        <div className="info"  style={{"max-height" : bool ? '500px' : '44px'}}>
+        <div className="info"  style={{maxHeight : bool ? '500px' : '44px'}}>
             <div className='banner_des'>
                 <h3 className="h3_description">{title}</h3>
                 <button onClick={desContent}>
