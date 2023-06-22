@@ -1,4 +1,5 @@
 .carousel_div {
+    background-color: white;
     overflow: hidden;
     border-radius: 25px;
     margin-left: 100px;
@@ -8,12 +9,11 @@
     position: relative;
     display: flex;
     flex-wrap: nowrap;
+    z-index: 2;
 }
 
 .previous_button, .next_button {
     display: flex;
-    border: none;
-    background: none;
     color: white;
     font-size: 80px;
     cursor: pointer;

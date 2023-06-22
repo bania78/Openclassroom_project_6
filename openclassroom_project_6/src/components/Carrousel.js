@@ -24,8 +24,12 @@ function Carrousel({ logement }) {
                 return <img className='carrousel_img' style={{transform: `translate(-${index * 100}%)`}} key={id} alt={logement.title} src={picture}></img>
             })
             }
-            <button className='previous_button' onClick={handlePrevious}>{"<"}</button>
-            <button className='next_button' onClick={handleNext}>{">"}</button>
+            <button className='previous_button' onClick={handlePrevious}>
+                <i className="fa-solid fa-angle-left"></i>
+            </button>
+            <button className='next_button' onClick={handleNext}>
+                <i className="fa-solid fa-angle-right"></i>
+            </button>
         </div>
     );
 }

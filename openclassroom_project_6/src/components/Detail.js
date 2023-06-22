@@ -4,9 +4,9 @@ function Detail({logement}) {
     let rate = [];
 
     for (let i = (Number(logement.rating)); i > 0; i--)
-        rate.push(<li key={i}><i className='fa-solid fa-star'></i></li>)
-    for (let i = (5 - (Number(logement.rating))); i > 0; i--)
-        rate.push(<li key={i}><i className='fa-solid fa-star grey'></i></li>)
+        rate.push(<li key={logement.id+i}><i className='fa-solid fa-star'></i></li>)
+    for (let i = ((Number(logement.rating)) - 5); i < 0; i++)
+        rate.push(<li key={logement.id+i}><i className='fa-solid fa-star grey'></i></li>)
     return (        
         <div className='detail_div'>
             <div className="title_div">

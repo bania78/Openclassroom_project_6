@@ -2,6 +2,7 @@ import Logements from '../data/logements.json'
 import { useLoaderData } from "react-router-dom";
 import Carrousel from './Carrousel';
 import Detail from './Detail';
+import Description from './Description';
 
 export async function getLogement(id) {
     let Logement = Logements.find(Logement => Logement.id === id);
@@ -19,6 +20,7 @@ function Logement() {
         <div>
             <Carrousel logement={logement}/>
             <Detail logement={logement}/>
+            <Description logement={logement}/>
         </div>
     );
 }
