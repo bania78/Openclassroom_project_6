@@ -24,3 +24,15 @@
     font-weight: normal;
     font-size: 48px;
 }
+
+@media screen and (max-width: 768px) {
+    .div_banner {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-inline: 0;
+    }
+
+    .h1_banner {
+        margin-left: 15px;
+    }
+}
