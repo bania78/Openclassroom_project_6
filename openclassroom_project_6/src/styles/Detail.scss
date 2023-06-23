@@ -33,6 +33,7 @@
         .h3_host {
             text-align: right;
             width: 100px;
+            font-weight: normal;
         }
         .img_host {
             height: 64px;
@@ -76,15 +77,19 @@
         margin-right: 20px;
         display: grid;
         .div_host {
-            float: right;
+            position: absolute;
+            margin: 0;
+            bottom: 5%;
+            right: 0;
         }
         .tag_star {
-            display: flex;
+            display: block;
             justify-content: space-between;
             float: none;
             width: 100%;
             .star {
                 float: left;
+                padding-left: 0;
             }
         }
     }

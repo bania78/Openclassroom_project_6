@@ -7,3 +7,10 @@
     justify-content: space-between;
     gap: 25px;
 }
+
+@media screen and (max-width: 768px) {
+    .content_a_propos {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
