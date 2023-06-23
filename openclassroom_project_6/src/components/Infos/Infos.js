@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import "../styles/Infos.scss"
+import "./Infos.scss"
 
 function Infos ({title, contents}) {
     const [index, setIndex] = useState(-1);

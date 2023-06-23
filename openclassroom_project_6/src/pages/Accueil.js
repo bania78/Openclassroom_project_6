@@ -1,5 +1,5 @@
-import Banner from './Banner';
-import CardList from './CardList';
+import Banner from '../components/Banner/Banner';
+import CardList from '../components/CardList/CardList';
 import img from '../assets/banner.jpg'
 
 function Accueil() {

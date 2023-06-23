@@ -1,5 +1,5 @@
-import logo from './../assets/logo_kasa.png';
-import '../styles/Nav.scss'
+import logo from './../../assets/logo_kasa.png';
+import './Nav.scss'
 
 function Nav() {
     return (

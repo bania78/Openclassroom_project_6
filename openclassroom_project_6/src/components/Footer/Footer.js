@@ -1,5 +1,5 @@
-import '../styles/Footer.scss'
-import logo from './../assets/logo_kasa_blanc.png';
+import './Footer.scss'
+import logo from './../../assets/logo_kasa_blanc.png';
 
 function Footer() {
     return  (

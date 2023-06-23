@@ -1,24 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles/index.scss';
-import App from './components/App';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
-import ErrorPage from "./components/ErrorPage";
+import ErrorPage from "./pages/ErrorPage/ErrorPage";
 import { createBrowserRouter, RouterProvider, } from "react-router-dom";
-import Logement, { loader as logementLoader, } from './components/Logement';
-import Accueil from './components/Accueil';
-import APropos from './components/APropos';
+import Logement, { loader as logementLoader, } from './pages/Logement';
+import Accueil from './pages/Accueil';
+import APropos from './pages/APropos/APropos';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App/>,
-    errorElement: <ErrorPage />,
     children: [
       {
         path: "",
         element: <Accueil />,
-        errorElement: <ErrorPage />,
       },
       {
         path: "logements/:logementId",
@@ -29,7 +27,10 @@ const router = createBrowserRouter([
       {
         path: "a_propos",
         element: <APropos />,
-        errorElement: <ErrorPage />,
+      },
+      {
+        path: "*",
+        element: <ErrorPage />,
       }
     ]
 

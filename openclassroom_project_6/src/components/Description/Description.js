@@ -1,5 +1,5 @@
-import "../styles/Description.scss"
-import Infos from './Infos';
+import "./Description.scss"
+import Infos from '../Infos/Infos';
 
 function Description ({logement}) {
     return (

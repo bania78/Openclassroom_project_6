@@ -1,4 +1,4 @@
-import '../styles/Detail.scss'
+import './Detail.scss'
 
 function Detail({logement}) {
     let rate = [];

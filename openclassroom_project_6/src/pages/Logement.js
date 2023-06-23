@@ -1,8 +1,8 @@
 import Logements from '../data/logements.json'
 import { useLoaderData } from "react-router-dom";
-import Carrousel from './Carrousel';
-import Detail from './Detail';
-import Description from './Description';
+import Carrousel from '../components/Carrousel/Carrousel';
+import Detail from '../components/Detail/Detail';
+import Description from '../components/Description/Description';
 
 export async function getLogement(id) {
     let Logement = Logements.find(Logement => Logement.id === id);

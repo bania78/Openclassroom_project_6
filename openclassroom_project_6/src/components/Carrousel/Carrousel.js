@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import '../styles/Carrousel.scss';
+import './Carrousel.scss';
 
 function Carrousel({ logement }) {
     const [index, setIndex] = useState(0);

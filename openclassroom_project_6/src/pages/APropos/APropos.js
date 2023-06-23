@@ -1,7 +1,7 @@
-import img from '../assets/banner_bis.jpg'
-import Banner from './Banner';
-import Infos from './Infos';
-import "../styles/APropos.scss"
+import img from '../../assets/banner_bis.jpg'
+import Banner from '../../components/Banner/Banner';
+import Infos from '../../components/Infos/Infos';
+import "./APropos.scss"
 
 function APropos () {
     return (
