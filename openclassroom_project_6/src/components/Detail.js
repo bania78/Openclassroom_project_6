@@ -1,4 +1,4 @@
-import '../styles/Detail.css'
+import '../styles/Detail.scss'
 
 function Detail({logement}) {
     let rate = [];
@@ -14,10 +14,10 @@ function Detail({logement}) {
                     <h2 className='h2_detail'>{logement.title}</h2>
                     <h3 className='h3_detail'>{logement.location}</h3>
                 </div>
-                <div className='div_host'>
-                    <h3 className='h3_detail h3_host'>{logement.host.name}</h3>
-                    <img className='img_host' src={logement.host.picture} alt={logement.host.name}></img>
-                </div>
+            </div>
+            <div className='div_host'>
+                <h3 className='h3_detail h3_host'>{logement.host.name}</h3>
+                <img className='img_host' src={logement.host.picture} alt={logement.host.name}></img>
             </div>
             <div className='tag_star'>
                 <ul className='tag'>

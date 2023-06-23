@@ -1,4 +1,4 @@
-import "../styles/Description.css"
+import "../styles/Description.scss"
 import Infos from './Infos';
 
 function Description ({logement}) {

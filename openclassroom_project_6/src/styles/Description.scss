@@ -6,3 +6,11 @@
     height: fit-content;
     gap: 40px;
 }
+
+@media screen and (max-width: 768px) {
+    .description_div {
+        margin-left: 20px;
+        margin-right: 20px;
+        display: grid;
+    }
+}

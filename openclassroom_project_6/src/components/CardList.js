@@ -1,5 +1,5 @@
 import Card from './Card';
-import '../styles/CardList.css'
+import '../styles/CardList.scss'
 
 function CardList() {
     return (

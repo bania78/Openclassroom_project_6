@@ -1,0 +1,30 @@
+.header {
+    position: sticky;
+    display: flex;
+    justify-content:space-between;
+    padding-inline:100px;
+    padding-block:30px;
+    align-items:center;
+    .ul_nav {
+        display: flex;
+        color: #FF6060;
+        .li_nav {
+            padding-inline: 10px;
+            .a_nav {
+                color: #FF6060;
+                text-decoration: none;
+            }
+            .a_nav:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-inline: 0;
+    }
+}

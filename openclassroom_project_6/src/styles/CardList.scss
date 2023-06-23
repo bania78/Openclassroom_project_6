@@ -6,16 +6,15 @@
     margin-right: 100px;
     position: relative;
     margin-top: 50px;
-}
-
-.ul_cardlist {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    gap: 25px;
-    padding-top: 20px;
+    .ul_cardlist {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        gap: 25px;
+        padding-top: 20px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -23,5 +22,7 @@
         margin-left: 20px;
         margin-right: 20px;
         padding-inline: 0;
+        background: none;
+        margin-top: 0;
     }
 }

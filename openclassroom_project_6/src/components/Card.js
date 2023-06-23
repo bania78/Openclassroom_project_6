@@ -1,5 +1,5 @@
 import logements from '../data/logements.json'
-import '../styles/Card.css'
+import '../styles/Card.scss'
 
 function Card() {
     return (

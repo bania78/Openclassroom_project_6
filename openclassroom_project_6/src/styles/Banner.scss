@@ -8,31 +8,30 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    .banner_img {
+        display: inline-block;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        filter: brightness(0.5);
+    }
+    .h1_banner {
+        position: absolute;
+        color: white;
+        font-weight: normal;
+        font-size: 48px;
+    }
 }
 
-.banner_img {
-   display: inline-block;
-   object-fit: cover;
-   width: 100%;
-   height: 100%;
-   filter: brightness(0.5);
-}
-
-.h1_banner {
-    position: absolute;
-    color: white;
-    font-weight: normal;
-    font-size: 48px;
-}
 
 @media screen and (max-width: 768px) {
     .div_banner {
         margin-left: 20px;
         margin-right: 20px;
         padding-inline: 0;
-    }
-
-    .h1_banner {
-        margin-left: 15px;
+        .h1_banner {
+            margin-left: 15px;
+        }
     }
 }
+

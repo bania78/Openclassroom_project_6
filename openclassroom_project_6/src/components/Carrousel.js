@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import '../styles/Carrousel.css';
+import '../styles/Carrousel.scss';
 
 function Carrousel({ logement }) {
     const [index, setIndex] = useState(0);
@@ -27,6 +27,7 @@ function Carrousel({ logement }) {
             <button className='previous_button' onClick={handlePrevious}>
                 <i className="fa-solid fa-angle-left"></i>
             </button>
+            <h3 className='number'>{index + 1}/{length}</h3>
             <button className='next_button' onClick={handleNext}>
                 <i className="fa-solid fa-angle-right"></i>
             </button>
