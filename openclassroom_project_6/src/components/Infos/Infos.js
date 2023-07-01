@@ -11,9 +11,9 @@ function Infos ({title, contents}) {
     }
     return (
         <div className="info"  style={{maxHeight : bool ? '500px' : '44px'}}>
-            <div className='banner_des'>
+            <div className='banner_des' onClick={desContent}>
                 <h3 className="h3_description">{title}</h3>
-                <button onClick={desContent}>
+                <button>
                     <i className="icon fa-solid fa-angle-down" style={{transform: `rotate(${(index + 1)* 180}deg)`}}></i>
                 </button>
             </div>
